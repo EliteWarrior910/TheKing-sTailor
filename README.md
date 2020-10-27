@@ -1,1 +1,1 @@
-# TheKing-sTailor
+# TheKingsTailor
