@@ -20,13 +20,28 @@
 </head>
 
 <body>
-    <div style='background-color: #1C1C1C; position: sticky; top: 1; z-index: 3;'>
-        <img style='float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;' src='./Public/Images/Phone.png' width="30" height="30"><p style = 'color:#544234; float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;'>(330) 265-1810</p>
-        <img style='float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;' src='./Public/Images/Mail.png' width="30" height="30"><p style = 'color:#544234; float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;'>ethanlee1111@yahoo.com</p>
-        <img style='float: center; margin-left: 425px;  margin-top: 10px; margin-bottom: 20px' src="./Public/Images/Title.jpg" alt="A True Crown" width="375" height="185">
+    <div class='title-grid'style='background-color: #1C1C1C;'>
+        <div class='title-grid__item title-phone'>
+            <img src='./Public/Images/Phone.png' width="30" height="30">
+        </div>
+        <div class='title-grid__item title-phonenumber'>
+            <p style = 'color:#544234;'>(330) 265-1810</p>
+        </div>
+        <div class='title-grid__item title-mail'>
+            <img src='./Public/Images/Mail.png' width="30" height="30">
+        </div>
+        <div class='title-grid__item title-email'>
+            <p style = 'color:#544234;'>ethanlee1111@yahoo.com</p>
+        </div>
+        <div class='title-grid__item title-background'>
+            <img style="opacity: 0.25;" src="./Public/Images/Tailoring.jpg" alt="Some rando image" width="100%" height="915px">
+        </div>
+        <div class='title-grid__item title-title'>
+            <img src="./Public/Images/TitlePNG.png" alt="A True Crown" style="margin-left: 260px;  margin-top: 175px;" width="700" height="415">
+        </div>
     </div>
     <div style='background-color: #444444; position: sticky; top: 0; z-index: 3; box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.45);'>
-        <center><p style="font-size: 28px; color:rgb(192, 192, 192);"><span style='color:#A78D3A'>Home</span>	&#8195;|	&#8195;Store	&#8195;|	&#8195;Custom Order	&#8195;|	&#8195;Blog	&#8195;|	&#8195;Company	&#8195;|	&#8195;View More</p></center>
+        <center><p style="font-size: 28px; color:rgb(192, 192, 192);"><span style='color:#A78D3A;'>Home</span>	&#8195;|	&#8195;<a href='KingsStore.html;'>Store</a>	&#8195;|	&#8195;Custom Order	&#8195;|	&#8195;Blog	&#8195;|	&#8195;Company	&#8195;|	&#8195;View More</p></center>
         <hr>
     </div>
 
@@ -63,6 +78,23 @@
         </div><br>
     </div>
     <!--Body-->
+    <!--Underbody-->
+    <div class='underbody-custom-grid'>
+        <div class='underbody-custom-grid__item underbody-title'>
+            <p style='font-size: 48px;'>Place a Custom Order:</p>
+        </div>
+        <div class='underbody-custom-grid__item underbody-mass'>
+            <p style='font-size: 22px; color:grey'>&#8195;Our team of the very best tailors will cater to any request our clients give us.<br>
+                &#8195;We've crafted many different suits and apparel for people of all walks of life,<br>
+                &#8195;making certain that their custom made suit, suits their life and their lifestyle.</p>
+        </div>
+        <div class='underbody-custom-grid__item underbody-but'>
+            <button class='btn-primary' style='background-color: #C1B57C; color: #404040; width: 280px; height: 75px;'>Place Your Custom Order</button>
+        </div>
+        <div class='underbody-custom-grid__item underbody-image'>
+            <img src='./Public/Images/Tailoring.jpg' alt='Some rando image' width='325px' height='350px'>
+        </div>
+    </div>
     <div class='lower-body-grid'>
         <hr>
         <div class='lower-body-grid__item lower-image'>
@@ -79,6 +111,7 @@
             &#8195;&#8195;ethanlee1111@yahoo.com</span></p>
         </div>
     </div>
+    <!--Underbody-->
     <!--Footer-->
     <div class='foot-grid'>
         <hr>
