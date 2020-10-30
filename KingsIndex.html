@@ -20,49 +20,108 @@
 </head>
 
 <body>
-    <div style='background-color: #1C1C1C; position: sticky; top: 1; z-index: 3;'>
-        <img style='float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;' src='./Public/Images/Phone.png' width="30" height="30"><p style = 'color:#544234; float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;'>(330) 265-1810</p>
-        <img style='float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;' src='./Public/Images/Mail.png' width="30" height="30"><p style = 'color:#544234; float: left; margin-top: 5px; margin-bottom: 15px; padding-top: 15px;'>ethanlee1111@yahoo.com</p>
-        <img style='float: center; margin-left: 425px;  margin-top: 10px; margin-bottom: 20px' src="./Public/Images/Title.jpg" alt="A True Crown" width="375" height="185">
+    <div class='title-grid'style='background-color: #1C1C1C;'>
+        <div class='title-grid__item title-phone'>
+            <img src='./Public/Images/Phone.png' width="30" height="30">
+        </div>
+        <div class='title-grid__item title-phonenumber'>
+            <p style = 'color:#544234;'>(330) 265-1810</p>
+        </div>
+        <div class='title-grid__item title-mail'>
+            <img src='./Public/Images/Mail.png' width="30" height="30">
+        </div>
+        <div class='title-grid__item title-email'>
+            <p style = 'color:#544234;'>ethanlee1111@yahoo.com</p>
+        </div>
+        <div class='title-grid__item title-background'>
+            <img style="opacity: 0.25;" src="./Public/Images/Tailoring.jpg" alt="Some rando image" width="100%" height="915px">
+        </div>
+        <div class='title-grid__item title-title'>
+            <img src="./Public/Images/TitlePNG.png" alt="A True Crown" style="margin-left: 260px;  margin-top: 175px;" width="700" height="415">
+        </div>
     </div>
     <div style='background-color: #444444; position: sticky; top: 0; z-index: 3; box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.45);'>
-        <center><p style="font-size: 28px; color:rgb(192, 192, 192);"><span style='color:#A78D3A'>Home</span>	&#8195;|	&#8195;Store	&#8195;|	&#8195;Custom Order	&#8195;|	&#8195;Blog	&#8195;|	&#8195;Company	&#8195;|	&#8195;View More</p></center>
+        <center><p style="font-size: 28px; color:rgb(192, 192, 192);"><span style='color:#A78D3A;'>Home</span>	&#8195;|	&#8195;<a style='color:rgb(192, 192, 192);' href='KingsStore.html'>Store</a>	&#8195;|	&#8195;Custom Order	&#8195;|	&#8195;Blog	&#8195;|	&#8195;Company	&#8195;|	&#8195;View More</p></center>
         <hr>
     </div>
-    <p style="font-size: 19px; margin-left: 20px;">Our company of the very best tailors <br>
-        have been specially trained for<br>
-        ultimate satisfaction. We can guarantee that<br>
-        there exists no better tailor anywhere and we <br>
-        cater to any request.</p>
 
-    <div>
-        <div>
+    <!--Body-->
+    <div class="image-stack">
+        <div class="image-stack__item random-title">
+            <h2 style='margin-left: 20px;'>Your Satisfaction Guaranteed</h2>
+        </div>
+        <div class='image-stack__item random-text'>
+            <p style="font-size: 27px; margin-left: 20px;">Our company of the very best tailors <br>
+                have been specially trained for<br>
+                ultimate satisfaction. We can guarantee that<br>
+                there exists no better tailor anywhere and we <br>
+                cater to any request.<br><br>
+                We've assisted hundreds in finding their<br>
+                choice of clothing that fit them and their<br>
+                lifestyle. Even if you believe our prices to<br>
+                be high, we have something for everybody.<br>
+                See what The King's Tailor can do for you.</p>
+        </div>
+        <div class="image-stack__item title-top1">
             <h2>Some of Our Work</h2>
-            <div class="image-stack">
-                <div class="image-stack__item title-top">
-                <h2>Some of Our Work</h2>
-                </div>
-                <div class="image-stack__item image-stack-item-top1">
-                  <img src='./Public/Images/AsianDude.jpg' alt='A super fancy Suit'>
-                </div>
-                <div class="image-stack__item image-stack-item-bottom1">
-                  <img src='./Public/Images/BatmanDude.JPG' alt='A super fancy dancy Suit'>
-                </div>
-                <div class="image-stack__item image-stack-item-bottom2">
-                    <img src='./Public/Images/SexbangDude.jpg' alt='A super mancy Suit'>
-                  </div>
-                <div class="image-stack__item image-stack-item-top2">
-                    <img src='./Public/Images/FemaleDude.JPG' alt='A super fancy nancy Suit'>
-                </div>
-             </div>
-        </div><br>
+        </div>
+        <div class="image-stack__item image-stack-item-top1">
+            <img src='./Public/Images/AsianDude.jpg' alt='A super fancy Suit'>
+        </div>
+        <div class="image-stack__item image-stack-item-bottom1">
+            <img src='./Public/Images/BatmanDude.JPG' alt='A super fancy dancy Suit'>
+        </div>
+        <div class="image-stack__item image-stack-item-bottom2">
+            <img src='./Public/Images/SexbangDude.jpg' alt='A super mancy Suit'>
+        </div>
+        <div class="image-stack__item image-stack-item-top2">
+            <img src='./Public/Images/FemaleDude.JPG' alt='A super fancy nancy Suit'>
+        </div>
     </div>
-
-    <div>
+    <hr style='width: 95%;'>
+    <!--Body-->
+    <!--Underbody-->
+    <div class='underbody-custom-grid'>
+        <div class='underbody-custom-grid__item underbody-title'>
+            <p style='font-size: 48px;'>Place a Custom Order:</p>
+        </div>
+        <div class='underbody-custom-grid__item underbody-mass'>
+            <p style='font-size: 22px; color:grey'>&#8195;Our team of the very best tailors will cater to any request our clients give us.<br>
+                &#8195;We've crafted many different suits and apparel for people of all walks of life,<br>
+                &#8195;making certain that their custom made suit, suits their life and their lifestyle.</p>
+        </div>
+        <div class='underbody-custom-grid__item underbody-but'>
+            <button style='background-color: #C1B57C; color: #666666; box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.425); border-radius: 15px; height: 70px; width: 350px; font-size: 35px;'>Place a Custom Order</button>
+        </div>
+        <div class='underbody-custom-grid__item underbody-image'>
+            <img src='./Public/Images/Tailoring.jpg' alt='Some rando image' width='375px' height='350px'>
+        </div>
+    </div>
+    <hr style='width: 95%;'>
+    <div class='lower-body-grid'>
         <hr>
-        <button>Part of the Footer</button>
-        <img src='./Public/Images/Mail.png' width="50" height="50">
-        <img src='./Public/Images/Phone.png' width="50" height="50">
+        <div class='lower-body-grid__item lower-image'>
+            <img src='./Public/Images/Tailoring.jpg' alt='Some rando image' width='375px' height='350px'>
+        </div>
+        <div class='lower-body-grid__item lower-title'>
+            <p style='font-size: 48px;'>Contact Us:</p>
+        </div>
+        <div class='lower-body-grid__item lower-mass'>
+            <p style='font-size: 22px; color: grey;'>&#8195;Do you have questions? Let us Know!<br>
+            &#8195;We're happy to answer any questions or<br>
+            &#8195;to scedual any sort of consultation.<br><br>
+            <span style='color:#A78D3A;'>&#8195;&#8195;(330) 265-1810<br>
+            &#8195;&#8195;ethanlee1111@yahoo.com</span></p>
+        </div>
     </div>
+    <!--Underbody-->
+    <!--Footer-->
+    <div class='foot-grid'>
+        <hr>
+        <div class='foot-grid__item foot-copy'>
+            <p>Copyright | Property of The Revenant King. <span style='color:floralwhite'>Terms of Use and Privacy Policy</span></p>
+        </div>
+    </div>
+    <!--Footer-->
 </body>
 </html>
