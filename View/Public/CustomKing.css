@@ -8,6 +8,7 @@ body{
     height: auto;
     background-color: #ffffff;
 }
+
 /* ----------------------------Grids--------------------------- */
 .page-grid{
     display: grid;
@@ -159,4 +160,27 @@ body{
   .lower-mass{
     grid-column:3 / span 2;
     grid-row:2;
+  }
+/*-------------------------------------Login Page-----------------------------------*/
+
+.login-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  }
+  .login-title{
+    grid-row:1;
+  }
+  .login-body{
+    display: grid;
+    grid-row:2;
+    grid-template-columns: 5% 45% 50% 5%;
+    }
+    .login-body img{
+      grid-column: 2;
+    }
+    .login-body form{
+      grid-column: 3;
+    }
+  .login-button{
+    grid-row:3;
   }
