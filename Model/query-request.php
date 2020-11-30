@@ -1,5 +1,6 @@
 <?php
-    public function submitRequest($Data){
+    echo"BeforeSubmitEcho";
+    function submitRequest($Data){
         require './query-log.php';
         $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
 
@@ -7,11 +8,13 @@
 
         $request = $DATA['Request'];
         $measurments = $DATA['Measurments'];
+        echo"BeforeQueryEcho";
         
-        $query1 = "SELECT CustomerID, Measurments FROM customers WHERE '$findName' = FirstName"
+        $query1 = "SELECT CustomerID, Measurments FROM customers WHERE '$findName' = FirstName";
         $Results1 = $this->conn->prepare($query1);
         $Results1->execute();
         echo"$Results1";
+        echo"AfterQueryEcho";
         //$query2 = "INSERT INTO Onlinetransactions VALUES("
     
     }

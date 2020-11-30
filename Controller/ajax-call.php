@@ -1,11 +1,11 @@
 <script>
-    function ajaxPeople(badabing, name){
+    function ajaxPeople(requestjax, custjax){
         $.ajax({
             type: "POST",
             url: "./Controller/submit-request.php",
-            data: "request=" + badabing + "&name=" + name,
+            data: "request=" + requestjax + "&cust=" + custjax,
             success: function(data){
-                $("#Whoa").html(data);
+                $("#aOutput").html(data);
             },
             error: function(data){
                 alert('An error occured. So... Go away. We\'ll fix it at some point.');

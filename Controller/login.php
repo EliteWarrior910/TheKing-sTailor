@@ -22,6 +22,7 @@
             $_SESSION['SomeOther'] = false;
         }
     }
+    echo"LoginEcho";
     // else if(isset($_POST['pphh'])){
     //     unset($_POST['enter']);
     //     unset($_POST['pphh']);
