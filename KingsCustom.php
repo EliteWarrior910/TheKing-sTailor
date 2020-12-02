@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
     if($_SESSION['SomeOther'] == false) header('Location: https://localhost/FITWebDev/TheKing-sTailor/KingsLog.php?');
 ?>
 <!DOCTYPE html>
@@ -38,8 +38,8 @@
 
         <div>
             <p>Put in your order here</p>
-                <input type="text" id="request">
-                <input type="text" id="cust">
+                <input type="text" id="request" placeholder="Put your request here">
+                <input type="text" id="cust" placeholder="Put your fake username here">
                 <button name="submit" onclick="ajaxPeople(document.getElementById('request').value, document.getElementById('cust').value)">Submit Order</button>
             <div id="aOutput"></div>
         </div>

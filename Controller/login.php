@@ -5,26 +5,19 @@
 
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
 
-    $findName = trim(htmlentities($POST['name']));
-
-
-    $consumerData = [
-        "name" => $name,
-    ];
+    $lumber = trim(htmlentities($POST['lumber']));
 
     $database = new Database();
     $db = $database->connect();
+    $naming = new Timber($db);
+
+    $alpineData = [
+        "lumber" => $lumber
+    ];
     
-    if(isset($_POST['enter'])){
-        if($_POST['name'] == '$findName' && $_POST['pass'] == '') $_SESSION['SomeOther'] = true;
-        else{
-            echo "Invalid Username or Password";
-            $_SESSION['SomeOther'] = false;
-        }
+    if($naming->logIn($lumber)) $_SESSION['SomeOther'] = true;
+    else{
+        echo "Invalid Username or Password";
+        $_SESSION['SomeOther'] = false;
     }
-    echo"LoginEcho";
-    // else if(isset($_POST['pphh'])){
-    //     unset($_POST['enter']);
-    //     unset($_POST['pphh']);
-    // }
 ?>

@@ -14,7 +14,6 @@
         $Results1 = $this->conn->prepare($query1);
         $Results1->execute();
         echo"$Results1";
-        echo"AfterQueryEcho";
         //$query2 = "INSERT INTO Onlinetransactions VALUES("
     
     }

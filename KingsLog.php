@@ -23,6 +23,7 @@
     <div class='page-grid'>
         <?php
         include './Controller/db_conn.php';
+        include './Controller/ajax-call.php';
         ?>
         <div style='background-color: #444444; position: sticky; top: 0; z-index: 3; box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.45);'>
             <center><p style="font-size: 28px; color:rgb(192, 192, 192);"><a style='color:rgb(192, 192, 192);' href='KingsIndex.html'>Home</a>	&#8195;|	&#8195;<a style='color:rgb(192, 192, 192);' href='KingsStore.html'>Store</a>	&#8195;|	&#8195;Custom Order	&#8195;|	&#8195;Blog	&#8195;|	&#8195;Company	&#8195;|	&#8195;View More</p></center>
@@ -36,14 +37,11 @@
             </div>
             <div class="login-grid__item login-body">
                 <img src='./View/Public/Images/Tailoring.jpg' alt='Some rando image' width='375px' height='350px'>
-                <form action="KingsCustom.php" method="post">
-                    <input type="text" placeholder="Name" name="name">
-                    <input type="text" placeholder="Password" name="pass">
-                    <div class="login-grid__item login-button">
-                        <button name="enter">Login</button>
-                    </div>
-                </form>
+                <input type="text" placeholder="Name" id="lumber" name="lumber">
+                <input type="text" placeholder="Password" name="pass">
+                <button name="enter" onclick="ajaxLumberjack(document.getElementById('lumber').value)">Login</button>
             </div>
+            <div id="bOutput"></div>
         </div>
     </div>
 </body>
